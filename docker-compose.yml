@@ -1,0 +1,48 @@
+version: "3.5"
+
+x-shared-config:
+  base: &base
+    stdin_open: true
+    tmpfs:
+      - /tmp
+    user: "1069:1420"
+
+
+  rails_env_files: &rails_env_files
+    env_file:
+    - .env
+    - .env.local
+
+  rails_image_name: &rails_image_name
+    image: mutations/rails:ruby3.1.2-alpine3.15-2022-05-05
+
+  api: &api
+    <<: *base
+    environment:
+      - HISTFILE=/app/log/.bash_history
+      - RAILS_ENV=${RAILS_ENV:-development}
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - .:/app:cached
+      - app_cache:/app/tmp/cache
+      - bundle:/bundle
+    working_dir: /app
+
+services:
+  app:
+    <<: *api
+    <<: *rails_env_files
+    <<: *rails_image_name
+    command: bundle exec rails s -p 3000
+    environment:
+      RAILS_ENV: development
+
+
+  shell:
+    <<: *api
+    <<: *rails_image_name
+    command: /bin/bash
+
+volumes:
+  app_cache:
+  bundle:
