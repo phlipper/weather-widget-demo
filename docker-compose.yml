@@ -7,6 +7,8 @@ x-shared-config:
       - /tmp
     user: "1069:1420"
 
+  postgres_image_name: &postgres_image_name
+    image: postgres:14.5-alpine
 
   rails_env_files: &rails_env_files
     env_file:
@@ -18,10 +20,11 @@ x-shared-config:
 
   api: &api
     <<: *base
+    depends_on:
+      - postgres
     environment:
       - HISTFILE=/app/log/.bash_history
       - RAILS_ENV=${RAILS_ENV:-development}
-      - REDIS_URL=redis://redis:6379
     volumes:
       - .:/app:cached
       - app_cache:/app/tmp/cache
@@ -36,6 +39,7 @@ services:
     command: bundle exec rails s -u puma -p 3000 -b 0.0.0.0
     depends_on:
       - caddy
+      - postgres
     environment:
       RAILS_ENV: development
 
@@ -46,6 +50,17 @@ services:
     volumes:
       - ./.caddy/Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
+
+  postgres:
+    <<: *postgres_image_name
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+
   shell:
     <<: *api
     <<: *rails_image_name
@@ -55,3 +70,4 @@ volumes:
   app_cache:
   bundle:
   caddy_data:
+  postgresql_data:
