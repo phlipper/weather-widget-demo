@@ -33,11 +33,19 @@ services:
     <<: *api
     <<: *rails_env_files
     <<: *rails_image_name
-    command: bundle exec rails s -p 3000
+    command: bundle exec rails s -u puma -p 3000 -b 0.0.0.0
+    depends_on:
+      - caddy
     environment:
       RAILS_ENV: development
 
-
+  caddy:
+    image: caddy:2.6.1-alpine
+    ports:
+      - 443:443
+    volumes:
+      - ./.caddy/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
   shell:
     <<: *api
     <<: *rails_image_name
@@ -46,3 +54,4 @@ services:
 volumes:
   app_cache:
   bundle:
+  caddy_data:

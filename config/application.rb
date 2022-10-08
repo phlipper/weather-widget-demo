@@ -33,5 +33,8 @@ module App
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Use local `lvh.me` domain for development
+    config.hosts << "weather.lvh.me" if Rails.env.development?
   end
 end
