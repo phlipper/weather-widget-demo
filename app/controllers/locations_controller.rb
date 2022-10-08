@@ -60,7 +60,7 @@ class LocationsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_location
-      @location = Location.find(params[:id])
+      @location = Location.find_by!(postal_code: params[:id])
     end
 
     # Only allow a list of trusted parameters through.

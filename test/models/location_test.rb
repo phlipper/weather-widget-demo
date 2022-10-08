@@ -49,4 +49,8 @@ class LocationTest < ActiveSupport::TestCase
     refute @location.valid?
     assert_not_nil @location.errors[:lng]
   end
+
+  test "to_param" do
+    assert_equal @location.postal_code, @location.to_param
+  end
 end
