@@ -14,7 +14,7 @@ class GetWeatherForLocation
   end
 
   def call
-    JSON.parse(get_result, object_class: OpenStruct)
+    JSON.parse(get_result)
   end
 
 private
