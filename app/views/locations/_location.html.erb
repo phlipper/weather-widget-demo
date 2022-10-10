@@ -1,0 +1,55 @@
+<div id="<%= dom_id location %>">
+  <% if location.weather.present? %>
+    <table>
+      <caption>
+        <%= render "location_address", location: location %>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Condition</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Humidity</th>
+          <th scope="col">Wind</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <%= time_label(location.weather.current.dt) %>
+          </td>
+          <td><%= weather_icon_for_location(location.weather.current) %></td>
+          <td>
+            <%= current_temperature(location.weather.current, feels_like: true) %>
+          </td>
+          <td><%= location.weather.current.humidity %>%</td>
+          <td><%= location.weather.current.wind_speed %></td>
+        </tr>
+
+        <% next_12_hourly_items(location).each do |hour| %>
+          <tr>
+            <td>
+              <%= time_label(hour.dt) %>
+            </td>
+            <td><%= weather_icon_for_location(hour) %></td>
+            <td><%= current_temperature(hour) %></td>
+            <td><%= hour.humidity %>%</td>
+            <td><%= hour.wind_speed %></td>
+          </tr>
+        <% end %>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">
+            <%= weather_updated_at(location.weather.current) %>
+
+            <small>
+              <%= cache_notice(location) %>
+            </small>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  <% end %>
+</div>

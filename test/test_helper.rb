@@ -1,4 +1,6 @@
 ENV["RAILS_ENV"] ||= "test"
+ENV["DATABASE_URL"] = "postgresql://postgres:postgres@postgres:5432/weather_test"
+
 require_relative "../config/environment"
 require "rails/test_help"
 
