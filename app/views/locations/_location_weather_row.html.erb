@@ -1,0 +1,11 @@
+<tr>
+  <td>
+    <%= time_label(weather.dt) %>
+  </td>
+  <td><%= weather_icon_for_location(weather) %></td>
+  <td>
+    <%= current_temperature(weather, feels_like: true) %>
+  </td>
+  <td><%= weather.humidity %>%</td>
+  <td><%= weather.wind_speed %></td>
+</tr>
