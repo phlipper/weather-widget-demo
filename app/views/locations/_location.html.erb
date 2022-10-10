@@ -2,15 +2,7 @@
   <% if location.weather.present? %>
     <table>
       <caption>
-        <address
-          itemprop="address"
-          itemscope
-          itemtype="https://schema.org/PostalAddress"
-        >
-          <span itemprop="addressLocality"><%= location.city %></span>,
-          <span itemprop="addressRegion"><%= location.state %></span>
-          <span itemprop="postalCode"><%= location.postal_code %></span>
-        </address>
+        <%= render "location_address", location: location %>
       </caption>
       <thead>
         <tr>

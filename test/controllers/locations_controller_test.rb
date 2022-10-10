@@ -35,30 +35,4 @@ class LocationsControllerTest < ActionDispatch::IntegrationTest
     get location_url(@location)
     assert_response :success
   end
-
-  test "should get edit" do
-    get edit_location_url(@location)
-    assert_response :success
-  end
-
-  test "should update location" do
-    patch location_url(@location), params: {
-      location: {
-        city: @location.city,
-        lat: @location.lat,
-        lng: @location.lng,
-        postal_code: @location.postal_code,
-        state: @location.state
-      }
-    }
-    assert_redirected_to location_url(@location)
-  end
-
-  test "should destroy location" do
-    assert_difference("Location.count", -1) do
-      delete location_url(@location)
-    end
-
-    assert_redirected_to locations_url
-  end
 end

@@ -8,3 +8,11 @@ window.initGoogleApi = (...args) => {
 
   window.dispatchEvent(event)
 }
+
+document.addEventListener('turbo:load', () => {
+  const autocompleteInput = document.getElementById('places-auto-complete')
+
+  if (autocompleteInput) {
+    autocompleteInput.style.display = 'block'
+  }
+})
