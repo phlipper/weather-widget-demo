@@ -1,0 +1,26 @@
+databases:
+  - databaseName: weather_production
+    name: weather_demo
+    plan: free
+    user: weather_demo
+
+services:
+  - buildCommand: ./bin/render-build.sh
+    env: ruby
+    envVars:
+      - fromDatabase:
+          name: weather_demo
+          property: connectionString
+        key: DATABASE_URL
+      - generateValue: true
+        key: SECRET_KEY_BASE
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: OPEN_WEATHER_API_KEY
+        sync: false
+    name: weather-api-demo
+    plan: free
+    region: oregon
+    repo: https://github.com/phlipper/weather-widget-demo.git
+    startCommand: bundle exec rails s -u puma
+    type: web

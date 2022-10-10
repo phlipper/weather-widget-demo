@@ -2,7 +2,13 @@ require "test_helper"
 
 class LocationsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @location = locations(:valid)
+    weather_json = File.read(
+      Rails.root.join('test/fixtures/files/weather_data.json')
+    )
+
+    @location = locations(:valid).tap do |l|
+      l.weather_data = JSON.parse(weather_json)
+    end
   end
 
   test "should get index" do

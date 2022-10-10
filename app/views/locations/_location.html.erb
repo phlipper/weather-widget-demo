@@ -14,30 +14,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <%= time_label(location.weather.current.dt) %>
-          </td>
-          <td><%= weather_icon_for_location(location.weather.current) %></td>
-          <td>
-            <%= current_temperature(location.weather.current, feels_like: true) %>
-          </td>
-          <td><%= location.weather.current.humidity %>%</td>
-          <td><%= location.weather.current.wind_speed %></td>
-        </tr>
-
-        <% next_12_hourly_items(location).each do |hour| %>
-          <tr>
-            <td>
-              <%= time_label(hour.dt) %>
-            </td>
-            <td><%= weather_icon_for_location(hour) %></td>
-            <td><%= current_temperature(hour) %></td>
-            <td><%= hour.humidity %>%</td>
-            <td><%= hour.wind_speed %></td>
-          </tr>
+        <% if location.weather.current.present? %>
+          <%= render "location_weather_row", weather: location.weather.current %>
         <% end %>
 
+        <% next_12_hourly_items(location).each do |hour| %>
+          <%= render "location_weather_row", weather: hour %>
+        <% end %>
       </tbody>
       <tfoot>
         <tr>
