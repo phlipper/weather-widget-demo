@@ -1,4 +1,18 @@
 module LocationsHelper
+  def cache_notice(location)
+    if location.weather_is_cached?
+      color = "green"
+      source = "cache"
+    else
+      color = "orange"
+      source = "API"
+    end
+
+    content_tag(:span, style: "color: #{color}; font-style: italic;") do
+      "Data loaded via #{source}."
+    end
+  end
+
   def current_temperature(weather, feels_like: false)
     output = [
       content_tag(:span, class: "current-temperature") do

@@ -51,6 +51,10 @@
         <tr>
           <td colspan="5">
             <%= weather_updated_at(location.weather.current) %>
+
+            <small>
+              <%= cache_notice(location) %>
+            </small>
           </td>
         </tr>
       </tfoot>
