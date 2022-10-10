@@ -1,27 +1,59 @@
 <div id="<%= dom_id location %>">
-  <p>
-    <strong>City:</strong>
-    <%= location.city %>
-  </p>
+  <% if location.weather.present? %>
+    <table>
+      <caption>
+        <address
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
+          <span itemprop="addressLocality"><%= location.city %></span>,
+          <span itemprop="addressRegion"><%= location.state %></span>
+          <span itemprop="postalCode"><%= location.postal_code %></span>
+        </address>
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Condition</th>
+          <th scope="col">Temperature</th>
+          <th scope="col">Humidity</th>
+          <th scope="col">Wind</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <%= time_label(location.weather.current.dt) %>
+          </td>
+          <td><%= weather_icon_for_location(location.weather.current) %></td>
+          <td>
+            <%= current_temperature(location.weather.current, feels_like: true) %>
+          </td>
+          <td><%= location.weather.current.humidity %>%</td>
+          <td><%= location.weather.current.wind_speed %></td>
+        </tr>
 
-  <p>
-    <strong>State:</strong>
-    <%= location.state %>
-  </p>
+        <% next_12_hourly_items(location).each do |hour| %>
+          <tr>
+            <td>
+              <%= time_label(hour.dt) %>
+            </td>
+            <td><%= weather_icon_for_location(hour) %></td>
+            <td><%= current_temperature(hour) %></td>
+            <td><%= hour.humidity %>%</td>
+            <td><%= hour.wind_speed %></td>
+          </tr>
+        <% end %>
 
-  <p>
-    <strong>Postal code:</strong>
-    <%= location.postal_code %>
-  </p>
-
-  <p>
-    <strong>Lat:</strong>
-    <%= location.lat %>
-  </p>
-
-  <p>
-    <strong>Lng:</strong>
-    <%= location.lng %>
-  </p>
-
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">
+            <%= weather_updated_at(location.weather.current) %>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  <% end %>
 </div>
