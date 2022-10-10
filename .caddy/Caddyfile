@@ -1,0 +1,9 @@
+{
+  local_certs
+}
+
+# `lvh.me` domain, generally available
+weather.lvh.me {
+  encode gzip
+  reverse_proxy app:3000
+}
