@@ -3,7 +3,7 @@ class Location < ApplicationRecord
 
   attribute :weather_is_cached, :boolean, default: false
 
-  validates :city, :state, :lat, :lng, presence: true
+  validates :accu_weather_key, :city, :state, :lat, :lng, presence: true
   validates :postal_code, length: { is: 5 }, presence: true, uniqueness: true
 
   def self.lookup(postal_code)

@@ -5,5 +5,7 @@
 >
   <span itemprop="addressLocality"><%= location.city %></span>,
   <span itemprop="addressRegion"><%= location.state %></span>
-  <span itemprop="postalCode"><%= location.postal_code %></span>
+  <span itemprop="postalCode">
+    <%= link_to location.postal_code, location_url(location) %>
+  </span>
 </address>

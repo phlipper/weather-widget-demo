@@ -1,38 +1,61 @@
 <div id="<%= dom_id location %>">
   <% if location.weather.present? %>
-    <table>
+    <table style="margin: auto; border: 1px solid gray; width: 65%;">
       <caption>
-        <%= render "location_address", location: location %>
+        <%= location.weather.Headline.Text %>
       </caption>
       <thead>
         <tr>
-          <th scope="col">Time</th>
-          <th scope="col">Condition</th>
-          <th scope="col">Temperature</th>
-          <th scope="col">Humidity</th>
-          <th scope="col">Wind</th>
+          <th scope="col" style="text-indent: -999em;">Time</th>
+          <th scope="col" style="text-indent: -999em;">Condition</th>
+          <th scope="col" style="text-align: left;">Temperature</th>
+          <th scope="col" style="text-align: left;">Wind</th>
         </tr>
       </thead>
       <tbody>
-        <% if location.weather.current.present? %>
-          <%= render "location_weather_row", weather: location.weather.current %>
-        <% end %>
-
-        <% next_12_hourly_items(location).each do |hour| %>
-          <%= render "location_weather_row", weather: hour %>
+        <% location.weather.DailyForecasts.each do |forecast| %>
+          <% bg_color = cycle("white", "#ffffcc") %>
+          <tr style="background-color: <%= bg_color %>;">
+            <td>
+              <%= date_label(forecast.Date, :day) %>
+            </td>
+            <td>
+              <%= weather_icon(forecast.Day) %>
+              <%= forecast.Day.LongPhrase %>
+            </td>
+            <td>High: <%= temperature_label(forecast.Temperature, :high) %></td>
+            <td><%= wind_direction(forecast.Day) %></td>
+          </tr>
+          <tr style="background-color: <%= bg_color %>;">
+            <td>
+              <%= date_label(forecast.Date, :night) %>
+            </td>
+            <td>
+              <%= weather_icon(forecast.Night) %>
+              <%= forecast.Night.LongPhrase %>
+            </td>
+            <td>Low: <%= temperature_label(forecast.Temperature, :low) %></td>
+            <td><%= wind_direction(forecast.Night) %></td>
+          </tr>
         <% end %>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="5">
-            <%= weather_updated_at(location.weather.current) %>
-
-            <small>
-              <%= cache_notice(location) %>
-            </small>
+          <td colspan="4">
+            <div style="text-align: center;">
+              <small>
+                <%= cache_notice(location) %>
+              </small>
+            </div>
           </td>
         </tr>
       </tfoot>
     </table>
   <% end %>
+
+  <div style="text-align: center;">
+    <p>
+      <%= link_to "Back to Locations", locations_path %>
+    </p>
+  </div>
 </div>

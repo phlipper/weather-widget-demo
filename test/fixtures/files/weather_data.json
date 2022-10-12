@@ -1,1698 +1,1300 @@
 {
-  "lat": 33.44,
-  "lon": -94.04,
-  "timezone": "America/Chicago",
-  "timezone_offset": -18000,
-  "current": {
-    "dt": 1665221064,
-    "sunrise": 1665231320,
-    "sunset": 1665273104,
-    "temp": 62.6,
-    "feels_like": 61.95,
-    "pressure": 1025,
-    "humidity": 72,
-    "dew_point": 53.46,
-    "uvi": 0,
-    "clouds": 0,
-    "visibility": 10000,
-    "wind_speed": 8.01,
-    "wind_deg": 93,
-    "wind_gust": 18.01,
-    "weather": [
-      {
-        "id": 800,
-        "main": "Clear",
-        "description": "clear sky",
-        "icon": "01n"
+  "DailyForecasts": [
+    {
+      "AirAndPollen": [
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "AirQuality",
+          "Type": "Ozone",
+          "Value": 84
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Grass",
+          "Value": 12
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Mold",
+          "Value": 3250
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Ragweed",
+          "Value": 30
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Tree",
+          "Value": 0
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "UVIndex",
+          "Value": 4
+        }
+      ],
+      "Date": "2022-10-11T07:00:00-07:00",
+      "Day": {
+        "CloudCover": 46,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0.1
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 4,
+        "IconPhrase": "Intermittent clouds",
+        "LongPhrase": "Increasing amounts of sun; pleasant this afternoon",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Clouds yielding to sun",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 3140.5
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 299,
+            "English": "WNW",
+            "Localized": "WNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 5.8
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 336,
+            "English": "NNW",
+            "Localized": "NNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 16.1
+          }
+        }
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        },
+        "Heating": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        }
+      },
+      "EpochDate": 1665496800,
+      "HoursOfSun": 6.4,
+      "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=1&lang=en-us",
+      "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=1&lang=en-us",
+      "Moon": {
+        "Age": 16,
+        "EpochRise": 1665542820,
+        "EpochSet": 1665594600,
+        "Phase": "WaningGibbous",
+        "Rise": "2022-10-11T19:47:00-07:00",
+        "Set": "2022-10-12T10:10:00-07:00"
+      },
+      "Night": {
+        "CloudCover": 53,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 36,
+        "IconPhrase": "Intermittent clouds",
+        "LongPhrase": "Mainly clear this evening; low clouds late",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Increasing cloudiness",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 0
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 288,
+            "English": "WNW",
+            "Localized": "WNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 4.6
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 337,
+            "English": "NNW",
+            "Localized": "NNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 13.8
+          }
+        }
+      },
+      "RealFeelTemperature": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 78
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 73
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "Sun": {
+        "EpochRise": 1665497520,
+        "EpochSet": 1665538620,
+        "Rise": "2022-10-11T07:12:00-07:00",
+        "Set": "2022-10-11T18:37:00-07:00"
+      },
+      "Temperature": {
+        "Maximum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 76
+        },
+        "Minimum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
       }
-    ]
-  },
-  "minutely": [
-    {
-      "dt": 1665221100,
-      "precipitation": 0
     },
     {
-      "dt": 1665221160,
-      "precipitation": 0
+      "AirAndPollen": [
+        {
+          "Category": "Good",
+          "CategoryValue": 1,
+          "Name": "AirQuality",
+          "Type": "Particle Pollution",
+          "Value": 46
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Grass",
+          "Value": 13
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Mold",
+          "Value": 3575
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Ragweed",
+          "Value": 33
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Tree",
+          "Value": 0
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "UVIndex",
+          "Value": 4
+        }
+      ],
+      "Date": "2022-10-12T07:00:00-07:00",
+      "Day": {
+        "CloudCover": 21,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0.12
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 2,
+        "IconPhrase": "Mostly sunny",
+        "LongPhrase": "Mostly sunny; nice in the afternoon",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Sunshine; nice in the p.m.",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 3827.8
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 321,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 6.9
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 326,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 16.1
+          }
+        }
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        },
+        "Heating": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        }
+      },
+      "EpochDate": 1665583200,
+      "HoursOfSun": 8.9,
+      "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=2&lang=en-us",
+      "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=2&lang=en-us",
+      "Moon": {
+        "Age": 17,
+        "EpochRise": 1665631140,
+        "EpochSet": 1665684840,
+        "Phase": "WaningGibbous",
+        "Rise": "2022-10-12T20:19:00-07:00",
+        "Set": "2022-10-13T11:14:00-07:00"
+      },
+      "Night": {
+        "CloudCover": 10,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 33,
+        "IconPhrase": "Clear",
+        "LongPhrase": "Clear",
+        "PrecipitationProbability": 1,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 1,
+        "ShortPhrase": "Clear",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 0
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 292,
+            "English": "WNW",
+            "Localized": "WNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 4.6
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 327,
+            "English": "NNW",
+            "Localized": "NNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 6.9
+          }
+        }
+      },
+      "RealFeelTemperature": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 78
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 74
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "Sun": {
+        "EpochRise": 1665583980,
+        "EpochSet": 1665624960,
+        "Rise": "2022-10-12T07:13:00-07:00",
+        "Set": "2022-10-12T18:36:00-07:00"
+      },
+      "Temperature": {
+        "Maximum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 77
+        },
+        "Minimum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      }
     },
     {
-      "dt": 1665221220,
-      "precipitation": 0
+      "AirAndPollen": [
+        {
+          "Category": "Good",
+          "CategoryValue": 1,
+          "Name": "AirQuality",
+          "Type": "Particle Pollution",
+          "Value": 25
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Grass",
+          "Value": 12
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Mold",
+          "Value": 3575
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Ragweed",
+          "Value": 32
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Tree",
+          "Value": 0
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "UVIndex",
+          "Value": 4
+        }
+      ],
+      "Date": "2022-10-13T07:00:00-07:00",
+      "Day": {
+        "CloudCover": 20,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0.11
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 2,
+        "IconPhrase": "Mostly sunny",
+        "LongPhrase": "Mostly sunny; nice in the afternoon",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Mostly sunny",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 3712.3
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 315,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 6.9
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 322,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 17.3
+          }
+        }
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        },
+        "Heating": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 1
+        }
+      },
+      "EpochDate": 1665669600,
+      "HoursOfSun": 9,
+      "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=3&lang=en-us",
+      "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=3&lang=en-us",
+      "Moon": {
+        "Age": 18,
+        "EpochRise": 1665719760,
+        "EpochSet": 1665774900,
+        "Phase": "WaningGibbous",
+        "Rise": "2022-10-13T20:56:00-07:00",
+        "Set": "2022-10-14T12:15:00-07:00"
+      },
+      "Night": {
+        "CloudCover": 42,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 35,
+        "IconPhrase": "Partly cloudy",
+        "LongPhrase": "Partly cloudy",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Partly cloudy",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 0
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 287,
+            "English": "WNW",
+            "Localized": "WNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 3.5
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 306,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 8.1
+          }
+        }
+      },
+      "RealFeelTemperature": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 77
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 73
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 54
+        }
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "Sun": {
+        "EpochRise": 1665670440,
+        "EpochSet": 1665711240,
+        "Rise": "2022-10-13T07:14:00-07:00",
+        "Set": "2022-10-13T18:34:00-07:00"
+      },
+      "Temperature": {
+        "Maximum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 76
+        },
+        "Minimum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 52
+        }
+      }
     },
     {
-      "dt": 1665221280,
-      "precipitation": 0
+      "AirAndPollen": [
+        {
+          "Category": "Good",
+          "CategoryValue": 1,
+          "Name": "AirQuality",
+          "Type": "Ozone",
+          "Value": 25
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Grass",
+          "Value": 9
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Mold",
+          "Value": 3575
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Ragweed",
+          "Value": 26
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Tree",
+          "Value": 0
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "UVIndex",
+          "Value": 4
+        }
+      ],
+      "Date": "2022-10-14T07:00:00-07:00",
+      "Day": {
+        "CloudCover": 21,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0.11
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 2,
+        "IconPhrase": "Mostly sunny",
+        "LongPhrase": "Mostly sunny; nice in the afternoon",
+        "PrecipitationProbability": 0,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 0,
+        "ShortPhrase": "Mostly sunny",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 3724.2
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 358,
+            "English": "N",
+            "Localized": "N"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 5.8
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 357,
+            "English": "N",
+            "Localized": "N"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 12.7
+          }
+        }
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 2
+        },
+        "Heating": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        }
+      },
+      "EpochDate": 1665756000,
+      "HoursOfSun": 9.1,
+      "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=4&lang=en-us",
+      "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=4&lang=en-us",
+      "Moon": {
+        "Age": 19,
+        "EpochRise": 1665808680,
+        "EpochSet": 1665864720,
+        "Phase": "WaningGibbous",
+        "Rise": "2022-10-14T21:38:00-07:00",
+        "Set": "2022-10-15T13:12:00-07:00"
+      },
+      "Night": {
+        "CloudCover": 22,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 34,
+        "IconPhrase": "Mostly clear",
+        "LongPhrase": "Mostly clear",
+        "PrecipitationProbability": 1,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 1,
+        "ShortPhrase": "Mostly clear",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 0
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 283,
+            "English": "WNW",
+            "Localized": "WNW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 3.5
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 357,
+            "English": "N",
+            "Localized": "N"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 8.1
+          }
+        }
+      },
+      "RealFeelTemperature": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 78
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 55
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 75
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 55
+        }
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "Sun": {
+        "EpochRise": 1665756900,
+        "EpochSet": 1665797580,
+        "Rise": "2022-10-14T07:15:00-07:00",
+        "Set": "2022-10-14T18:33:00-07:00"
+      },
+      "Temperature": {
+        "Maximum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 78
+        },
+        "Minimum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 55
+        }
+      }
     },
     {
-      "dt": 1665221340,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221400,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221460,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221520,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221580,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221640,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221700,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221760,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221820,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221880,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665221940,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222000,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222060,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222120,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222180,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222240,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222300,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222360,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222420,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222480,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222540,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222600,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222660,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222720,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222780,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222840,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222900,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665222960,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223020,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223080,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223140,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223200,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223260,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223320,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223380,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223440,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223500,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223560,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223620,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223680,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223740,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223800,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223860,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223920,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665223980,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224040,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224100,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224160,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224220,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224280,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224340,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224400,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224460,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224520,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224580,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224640,
-      "precipitation": 0
-    },
-    {
-      "dt": 1665224700,
-      "precipitation": 0
+      "AirAndPollen": [
+        {
+          "Category": "Good",
+          "CategoryValue": 1,
+          "Name": "AirQuality",
+          "Type": "Ozone",
+          "Value": 25
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Grass",
+          "Value": 5
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Mold",
+          "Value": 3575
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "Ragweed",
+          "Value": 17
+        },
+        {
+          "Category": "Low",
+          "CategoryValue": 1,
+          "Name": "Tree",
+          "Value": 0
+        },
+        {
+          "Category": "Moderate",
+          "CategoryValue": 2,
+          "Name": "UVIndex",
+          "Value": 4
+        }
+      ],
+      "Date": "2022-10-15T07:00:00-07:00",
+      "Day": {
+        "CloudCover": 22,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0.11
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 2,
+        "IconPhrase": "Mostly sunny",
+        "LongPhrase": "Mostly sunny and beautiful",
+        "PrecipitationProbability": 5,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 5,
+        "ShortPhrase": "Mostly sunny and beautiful",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 3671.1
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 45,
+            "English": "NE",
+            "Localized": "NE"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 4.6
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 311,
+            "English": "NW",
+            "Localized": "NW"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 6.9
+          }
+        }
+      },
+      "DegreeDaySummary": {
+        "Cooling": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        },
+        "Heating": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 0
+        }
+      },
+      "EpochDate": 1665842400,
+      "HoursOfSun": 9,
+      "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=5&lang=en-us",
+      "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?day=5&lang=en-us",
+      "Moon": {
+        "Age": 20,
+        "EpochRise": 1665897960,
+        "EpochSet": 1665954180,
+        "Phase": "WaningGibbous",
+        "Rise": "2022-10-15T22:26:00-07:00",
+        "Set": "2022-10-16T14:03:00-07:00"
+      },
+      "Night": {
+        "CloudCover": 42,
+        "Evapotranspiration": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "HasPrecipitation": false,
+        "HoursOfIce": 0,
+        "HoursOfPrecipitation": 0,
+        "HoursOfRain": 0,
+        "HoursOfSnow": 0,
+        "Ice": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "IceProbability": 0,
+        "Icon": 35,
+        "IconPhrase": "Partly cloudy",
+        "LongPhrase": "Patchy clouds",
+        "PrecipitationProbability": 11,
+        "Rain": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "RainProbability": 11,
+        "ShortPhrase": "Patchy clouds",
+        "Snow": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "SnowProbability": 0,
+        "SolarIrradiance": {
+          "Unit": "W/m²",
+          "UnitType": 33,
+          "Value": 0
+        },
+        "ThunderstormProbability": 0,
+        "TotalLiquid": {
+          "Unit": "in",
+          "UnitType": 1,
+          "Value": 0
+        },
+        "Wind": {
+          "Direction": {
+            "Degrees": 161,
+            "English": "SSE",
+            "Localized": "SSE"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 4.6
+          }
+        },
+        "WindGust": {
+          "Direction": {
+            "Degrees": 166,
+            "English": "SSE",
+            "Localized": "SSE"
+          },
+          "Speed": {
+            "Unit": "mi/h",
+            "UnitType": 9,
+            "Value": 6.9
+          }
+        }
+      },
+      "RealFeelTemperature": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 80
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 53
+        }
+      },
+      "RealFeelTemperatureShade": {
+        "Maximum": {
+          "Phrase": "Pleasant",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 75
+        },
+        "Minimum": {
+          "Phrase": "Cool",
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 53
+        }
+      },
+      "Sources": [
+        "AccuWeather"
+      ],
+      "Sun": {
+        "EpochRise": 1665843360,
+        "EpochSet": 1665883860,
+        "Rise": "2022-10-15T07:16:00-07:00",
+        "Set": "2022-10-15T18:31:00-07:00"
+      },
+      "Temperature": {
+        "Maximum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 77
+        },
+        "Minimum": {
+          "Unit": "F",
+          "UnitType": 18,
+          "Value": 53
+        }
+      }
     }
   ],
-  "hourly": [
-    {
-      "dt": 1665219600,
-      "temp": 62.6,
-      "feels_like": 61.95,
-      "pressure": 1025,
-      "humidity": 72,
-      "dew_point": 53.46,
-      "uvi": 0,
-      "clouds": 0,
-      "visibility": 10000,
-      "wind_speed": 10.38,
-      "wind_deg": 52,
-      "wind_gust": 22.88,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665223200,
-      "temp": 62.73,
-      "feels_like": 61.9,
-      "pressure": 1025,
-      "humidity": 68,
-      "dew_point": 52.03,
-      "uvi": 0,
-      "clouds": 7,
-      "visibility": 10000,
-      "wind_speed": 10.47,
-      "wind_deg": 51,
-      "wind_gust": 21.94,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665226800,
-      "temp": 62.78,
-      "feels_like": 61.72,
-      "pressure": 1026,
-      "humidity": 63,
-      "dew_point": 50.02,
-      "uvi": 0,
-      "clouds": 18,
-      "visibility": 10000,
-      "wind_speed": 10.92,
-      "wind_deg": 55,
-      "wind_gust": 23.09,
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665230400,
-      "temp": 62.04,
-      "feels_like": 60.67,
-      "pressure": 1027,
-      "humidity": 58,
-      "dew_point": 47.12,
-      "uvi": 0,
-      "clouds": 30,
-      "visibility": 10000,
-      "wind_speed": 10.65,
-      "wind_deg": 58,
-      "wind_gust": 23.17,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665234000,
-      "temp": 61.14,
-      "feels_like": 59.49,
-      "pressure": 1027,
-      "humidity": 54,
-      "dew_point": 44.38,
-      "uvi": 0,
-      "clouds": 37,
-      "visibility": 10000,
-      "wind_speed": 9.95,
-      "wind_deg": 57,
-      "wind_gust": 21.97,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665237600,
-      "temp": 61.3,
-      "feels_like": 59.4,
-      "pressure": 1029,
-      "humidity": 48,
-      "dew_point": 41.79,
-      "uvi": 0.63,
-      "clouds": 67,
-      "visibility": 10000,
-      "wind_speed": 11.12,
-      "wind_deg": 55,
-      "wind_gust": 19.42,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665241200,
-      "temp": 61.83,
-      "feels_like": 59.92,
-      "pressure": 1030,
-      "humidity": 47,
-      "dew_point": 41.56,
-      "uvi": 1.8,
-      "clouds": 78,
-      "visibility": 10000,
-      "wind_speed": 10.45,
-      "wind_deg": 56,
-      "wind_gust": 16.37,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665244800,
-      "temp": 62.67,
-      "feels_like": 60.75,
-      "pressure": 1029,
-      "humidity": 45,
-      "dew_point": 41.5,
-      "uvi": 3.15,
-      "clouds": 84,
-      "visibility": 10000,
-      "wind_speed": 9.64,
-      "wind_deg": 64,
-      "wind_gust": 14.16,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665248400,
-      "temp": 64.8,
-      "feels_like": 63,
-      "pressure": 1029,
-      "humidity": 43,
-      "dew_point": 41.83,
-      "uvi": 4.56,
-      "clouds": 84,
-      "visibility": 10000,
-      "wind_speed": 7.76,
-      "wind_deg": 59,
-      "wind_gust": 10.63,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665252000,
-      "temp": 70.21,
-      "feels_like": 68.67,
-      "pressure": 1028,
-      "humidity": 37,
-      "dew_point": 43,
-      "uvi": 5.32,
-      "clouds": 76,
-      "visibility": 10000,
-      "wind_speed": 7.74,
-      "wind_deg": 65,
-      "wind_gust": 8.61,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665255600,
-      "temp": 73.02,
-      "feels_like": 71.67,
-      "pressure": 1027,
-      "humidity": 35,
-      "dew_point": 44.13,
-      "uvi": 5.81,
-      "clouds": 14,
-      "visibility": 10000,
-      "wind_speed": 7,
-      "wind_deg": 70,
-      "wind_gust": 6.98,
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665259200,
-      "temp": 74.53,
-      "feels_like": 73.33,
-      "pressure": 1025,
-      "humidity": 35,
-      "dew_point": 45.19,
-      "uvi": 4.59,
-      "clouds": 25,
-      "visibility": 10000,
-      "wind_speed": 6.26,
-      "wind_deg": 73,
-      "wind_gust": 6.4,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665262800,
-      "temp": 73.27,
-      "feels_like": 72.03,
-      "pressure": 1024,
-      "humidity": 37,
-      "dew_point": 45.93,
-      "uvi": 2.87,
-      "clouds": 50,
-      "visibility": 10000,
-      "wind_speed": 4.23,
-      "wind_deg": 75,
-      "wind_gust": 5.7,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665266400,
-      "temp": 74.5,
-      "feels_like": 73.38,
-      "pressure": 1024,
-      "humidity": 37,
-      "dew_point": 46.54,
-      "uvi": 1.04,
-      "clouds": 56,
-      "visibility": 10000,
-      "wind_speed": 3.47,
-      "wind_deg": 56,
-      "wind_gust": 4.94,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665270000,
-      "temp": 73.54,
-      "feels_like": 72.48,
-      "pressure": 1024,
-      "humidity": 40,
-      "dew_point": 48.15,
-      "uvi": 0.28,
-      "clouds": 48,
-      "visibility": 10000,
-      "wind_speed": 2.86,
-      "wind_deg": 49,
-      "wind_gust": 4.25,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665273600,
-      "temp": 66.67,
-      "feels_like": 65.34,
-      "pressure": 1024,
-      "humidity": 49,
-      "dew_point": 46.98,
-      "uvi": 0,
-      "clouds": 42,
-      "visibility": 10000,
-      "wind_speed": 2.53,
-      "wind_deg": 66,
-      "wind_gust": 3.29,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665277200,
-      "temp": 63.81,
-      "feels_like": 62.38,
-      "pressure": 1025,
-      "humidity": 53,
-      "dew_point": 46.72,
-      "uvi": 0,
-      "clouds": 16,
-      "visibility": 10000,
-      "wind_speed": 3.24,
-      "wind_deg": 78,
-      "wind_gust": 3.62,
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665280800,
-      "temp": 61.95,
-      "feels_like": 60.53,
-      "pressure": 1025,
-      "humidity": 57,
-      "dew_point": 46.53,
-      "uvi": 0,
-      "clouds": 11,
-      "visibility": 10000,
-      "wind_speed": 3.2,
-      "wind_deg": 89,
-      "wind_gust": 3.42,
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665284400,
-      "temp": 60.42,
-      "feels_like": 58.95,
-      "pressure": 1025,
-      "humidity": 59,
-      "dew_point": 46.31,
-      "uvi": 0,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 3.44,
-      "wind_deg": 90,
-      "wind_gust": 3.44,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665288000,
-      "temp": 59.25,
-      "feels_like": 57.74,
-      "pressure": 1025,
-      "humidity": 61,
-      "dew_point": 46.13,
-      "uvi": 0,
-      "clouds": 9,
-      "visibility": 10000,
-      "wind_speed": 3.11,
-      "wind_deg": 100,
-      "wind_gust": 3.22,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665291600,
-      "temp": 58.39,
-      "feels_like": 56.89,
-      "pressure": 1025,
-      "humidity": 63,
-      "dew_point": 45.84,
-      "uvi": 0,
-      "clouds": 9,
-      "visibility": 10000,
-      "wind_speed": 2.37,
-      "wind_deg": 111,
-      "wind_gust": 2.48,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665295200,
-      "temp": 57.79,
-      "feels_like": 56.23,
-      "pressure": 1025,
-      "humidity": 63,
-      "dew_point": 45.59,
-      "uvi": 0,
-      "clouds": 8,
-      "visibility": 10000,
-      "wind_speed": 1.61,
-      "wind_deg": 115,
-      "wind_gust": 1.63,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665298800,
-      "temp": 57.58,
-      "feels_like": 55.99,
-      "pressure": 1025,
-      "humidity": 63,
-      "dew_point": 45.36,
-      "uvi": 0,
-      "clouds": 7,
-      "visibility": 10000,
-      "wind_speed": 2.35,
-      "wind_deg": 115,
-      "wind_gust": 2.37,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665302400,
-      "temp": 57.15,
-      "feels_like": 55.56,
-      "pressure": 1025,
-      "humidity": 64,
-      "dew_point": 45.07,
-      "uvi": 0,
-      "clouds": 5,
-      "visibility": 10000,
-      "wind_speed": 2.19,
-      "wind_deg": 106,
-      "wind_gust": 2.26,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665306000,
-      "temp": 56.62,
-      "feels_like": 54.99,
-      "pressure": 1025,
-      "humidity": 64,
-      "dew_point": 44.82,
-      "uvi": 0,
-      "clouds": 5,
-      "visibility": 10000,
-      "wind_speed": 1.92,
-      "wind_deg": 52,
-      "wind_gust": 1.9,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665309600,
-      "temp": 56.1,
-      "feels_like": 54.46,
-      "pressure": 1025,
-      "humidity": 65,
-      "dew_point": 44.58,
-      "uvi": 0,
-      "clouds": 6,
-      "visibility": 10000,
-      "wind_speed": 2.77,
-      "wind_deg": 47,
-      "wind_gust": 2.73,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665313200,
-      "temp": 55.45,
-      "feels_like": 53.8,
-      "pressure": 1025,
-      "humidity": 66,
-      "dew_point": 44.4,
-      "uvi": 0,
-      "clouds": 6,
-      "visibility": 10000,
-      "wind_speed": 2.84,
-      "wind_deg": 49,
-      "wind_gust": 2.84,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665316800,
-      "temp": 54.88,
-      "feels_like": 53.22,
-      "pressure": 1025,
-      "humidity": 67,
-      "dew_point": 44.28,
-      "uvi": 0,
-      "clouds": 6,
-      "visibility": 10000,
-      "wind_speed": 2.26,
-      "wind_deg": 78,
-      "wind_gust": 2.35,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665320400,
-      "temp": 57.65,
-      "feels_like": 56.08,
-      "pressure": 1026,
-      "humidity": 63,
-      "dew_point": 45.28,
-      "uvi": 0,
-      "clouds": 7,
-      "visibility": 10000,
-      "wind_speed": 1.32,
-      "wind_deg": 82,
-      "wind_gust": 1.41,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665324000,
-      "temp": 63.88,
-      "feels_like": 62.37,
-      "pressure": 1026,
-      "humidity": 51,
-      "dew_point": 45.54,
-      "uvi": 0.3,
-      "clouds": 8,
-      "visibility": 10000,
-      "wind_speed": 2.39,
-      "wind_deg": 144,
-      "wind_gust": 2.71,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665327600,
-      "temp": 69.42,
-      "feels_like": 68.09,
-      "pressure": 1026,
-      "humidity": 43,
-      "dew_point": 46.4,
-      "uvi": 0.88,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 3.31,
-      "wind_deg": 181,
-      "wind_gust": 3.96,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665331200,
-      "temp": 73.15,
-      "feels_like": 72,
-      "pressure": 1026,
-      "humidity": 39,
-      "dew_point": 47.19,
-      "uvi": 2.75,
-      "clouds": 20,
-      "visibility": 10000,
-      "wind_speed": 3.06,
-      "wind_deg": 243,
-      "wind_gust": 4.14,
-      "weather": [
-        {
-          "id": 801,
-          "main": "Clouds",
-          "description": "few clouds",
-          "icon": "02d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665334800,
-      "temp": 73.96,
-      "feels_like": 72.93,
-      "pressure": 1026,
-      "humidity": 40,
-      "dew_point": 48,
-      "uvi": 3.98,
-      "clouds": 30,
-      "visibility": 10000,
-      "wind_speed": 4.27,
-      "wind_deg": 293,
-      "wind_gust": 5.35,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665338400,
-      "temp": 72.39,
-      "feels_like": 71.35,
-      "pressure": 1025,
-      "humidity": 43,
-      "dew_point": 48.67,
-      "uvi": 4.66,
-      "clouds": 41,
-      "visibility": 10000,
-      "wind_speed": 5.79,
-      "wind_deg": 298,
-      "wind_gust": 5.79,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665342000,
-      "temp": 74.89,
-      "feels_like": 73.96,
-      "pressure": 1024,
-      "humidity": 40,
-      "dew_point": 49.41,
-      "uvi": 5.71,
-      "clouds": 78,
-      "visibility": 10000,
-      "wind_speed": 4.76,
-      "wind_deg": 317,
-      "wind_gust": 6.13,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665345600,
-      "temp": 78.39,
-      "feels_like": 77.67,
-      "pressure": 1023,
-      "humidity": 37,
-      "dew_point": 50.59,
-      "uvi": 4.51,
-      "clouds": 50,
-      "visibility": 10000,
-      "wind_speed": 4.72,
-      "wind_deg": 304,
-      "wind_gust": 7.27,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665349200,
-      "temp": 79.61,
-      "feels_like": 79.61,
-      "pressure": 1022,
-      "humidity": 37,
-      "dew_point": 51.03,
-      "uvi": 2.81,
-      "clouds": 42,
-      "visibility": 10000,
-      "wind_speed": 6.17,
-      "wind_deg": 308,
-      "wind_gust": 8.19,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665352800,
-      "temp": 79.12,
-      "feels_like": 79.12,
-      "pressure": 1022,
-      "humidity": 37,
-      "dew_point": 51.1,
-      "uvi": 1.29,
-      "clouds": 33,
-      "visibility": 10000,
-      "wind_speed": 5.66,
-      "wind_deg": 302,
-      "wind_gust": 7.36,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665356400,
-      "temp": 76.91,
-      "feels_like": 76.28,
-      "pressure": 1022,
-      "humidity": 42,
-      "dew_point": 52.59,
-      "uvi": 0.35,
-      "clouds": 28,
-      "visibility": 10000,
-      "wind_speed": 4.18,
-      "wind_deg": 286,
-      "wind_gust": 5.97,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665360000,
-      "temp": 69.8,
-      "feels_like": 68.92,
-      "pressure": 1022,
-      "humidity": 52,
-      "dew_point": 51.55,
-      "uvi": 0,
-      "clouds": 25,
-      "visibility": 10000,
-      "wind_speed": 3.4,
-      "wind_deg": 268,
-      "wind_gust": 3.69,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665363600,
-      "temp": 67.33,
-      "feels_like": 66.4,
-      "pressure": 1022,
-      "humidity": 56,
-      "dew_point": 51.48,
-      "uvi": 0,
-      "clouds": 9,
-      "visibility": 10000,
-      "wind_speed": 2.84,
-      "wind_deg": 257,
-      "wind_gust": 3.15,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665367200,
-      "temp": 66.07,
-      "feels_like": 65.16,
-      "pressure": 1022,
-      "humidity": 59,
-      "dew_point": 51.35,
-      "uvi": 0,
-      "clouds": 8,
-      "visibility": 10000,
-      "wind_speed": 2.57,
-      "wind_deg": 264,
-      "wind_gust": 2.95,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665370800,
-      "temp": 65.07,
-      "feels_like": 64.15,
-      "pressure": 1022,
-      "humidity": 61,
-      "dew_point": 51.28,
-      "uvi": 0,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 1.68,
-      "wind_deg": 331,
-      "wind_gust": 1.95,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665374400,
-      "temp": 64.09,
-      "feels_like": 63.12,
-      "pressure": 1022,
-      "humidity": 62,
-      "dew_point": 51.17,
-      "uvi": 0,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 0.72,
-      "wind_deg": 33,
-      "wind_gust": 1.21,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665378000,
-      "temp": 63.39,
-      "feels_like": 62.44,
-      "pressure": 1022,
-      "humidity": 64,
-      "dew_point": 50.99,
-      "uvi": 0,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 1.68,
-      "wind_deg": 153,
-      "wind_gust": 1.86,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665381600,
-      "temp": 62.91,
-      "feels_like": 61.95,
-      "pressure": 1022,
-      "humidity": 65,
-      "dew_point": 50.92,
-      "uvi": 0,
-      "clouds": 10,
-      "visibility": 10000,
-      "wind_speed": 3.2,
-      "wind_deg": 178,
-      "wind_gust": 3.31,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665385200,
-      "temp": 62.15,
-      "feels_like": 61.16,
-      "pressure": 1022,
-      "humidity": 66,
-      "dew_point": 50.86,
-      "uvi": 0,
-      "clouds": 8,
-      "visibility": 10000,
-      "wind_speed": 1.63,
-      "wind_deg": 204,
-      "wind_gust": 1.77,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01n"
-        }
-      ],
-      "pop": 0
-    },
-    {
-      "dt": 1665388800,
-      "temp": 61.9,
-      "feels_like": 60.94,
-      "pressure": 1022,
-      "humidity": 67,
-      "dew_point": 50.77,
-      "uvi": 0,
-      "clouds": 31,
-      "visibility": 10000,
-      "wind_speed": 0.69,
-      "wind_deg": 289,
-      "wind_gust": 1.19,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03n"
-        }
-      ],
-      "pop": 0
-    }
-  ],
-  "daily": [
-    {
-      "dt": 1665252000,
-      "sunrise": 1665231320,
-      "sunset": 1665273104,
-      "moonrise": 1665271860,
-      "moonset": 1665226200,
-      "moon_phase": 0.46,
-      "temp": {
-        "day": 70.21,
-        "min": 59.25,
-        "max": 74.53,
-        "night": 59.25,
-        "eve": 66.67,
-        "morn": 62.04
-      },
-      "feels_like": {
-        "day": 68.67,
-        "night": 57.74,
-        "eve": 65.34,
-        "morn": 60.67
-      },
-      "pressure": 1028,
-      "humidity": 37,
-      "dew_point": 43,
-      "wind_speed": 11.12,
-      "wind_deg": 55,
-      "wind_gust": 25.84,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": 76,
-      "pop": 0,
-      "uvi": 5.81
-    },
-    {
-      "dt": 1665338400,
-      "sunrise": 1665317764,
-      "sunset": 1665359426,
-      "moonrise": 1665360000,
-      "moonset": 1665316500,
-      "moon_phase": 0.5,
-      "temp": {
-        "day": 72.39,
-        "min": 54.88,
-        "max": 79.61,
-        "night": 64.09,
-        "eve": 69.8,
-        "morn": 54.88
-      },
-      "feels_like": {
-        "day": 71.35,
-        "night": 63.12,
-        "eve": 68.92,
-        "morn": 53.22
-      },
-      "pressure": 1025,
-      "humidity": 43,
-      "dew_point": 48.67,
-      "wind_speed": 6.17,
-      "wind_deg": 308,
-      "wind_gust": 8.19,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": 41,
-      "pop": 0,
-      "uvi": 5.71
-    },
-    {
-      "dt": 1665424800,
-      "sunrise": 1665404208,
-      "sunset": 1665445749,
-      "moonrise": 1665448140,
-      "moonset": 1665406680,
-      "moon_phase": 0.53,
-      "temp": {
-        "day": 83.43,
-        "min": 59.52,
-        "max": 86.58,
-        "night": 67.71,
-        "eve": 74.95,
-        "morn": 59.52
-      },
-      "feels_like": {
-        "day": 82.08,
-        "night": 66.96,
-        "eve": 74.26,
-        "morn": 58.55
-      },
-      "pressure": 1022,
-      "humidity": 35,
-      "dew_point": 52.84,
-      "wind_speed": 7.02,
-      "wind_deg": 129,
-      "wind_gust": 16.13,
-      "weather": [
-        {
-          "id": 802,
-          "main": "Clouds",
-          "description": "scattered clouds",
-          "icon": "03d"
-        }
-      ],
-      "clouds": 38,
-      "pop": 0,
-      "uvi": 6.08
-    },
-    {
-      "dt": 1665511200,
-      "sunrise": 1665490653,
-      "sunset": 1665532072,
-      "moonrise": 1665536400,
-      "moonset": 1665496860,
-      "moon_phase": 0.56,
-      "temp": {
-        "day": 82.36,
-        "min": 62.85,
-        "max": 86.79,
-        "night": 67.91,
-        "eve": 75.83,
-        "morn": 62.85
-      },
-      "feels_like": {
-        "day": 80.74,
-        "night": 66.56,
-        "eve": 74.75,
-        "morn": 61.75
-      },
-      "pressure": 1019,
-      "humidity": 30,
-      "dew_point": 47.59,
-      "wind_speed": 10.47,
-      "wind_deg": 168,
-      "wind_gust": 23.8,
-      "weather": [
-        {
-          "id": 803,
-          "main": "Clouds",
-          "description": "broken clouds",
-          "icon": "04d"
-        }
-      ],
-      "clouds": 80,
-      "pop": 0,
-      "uvi": 5.69
-    },
-    {
-      "dt": 1665597600,
-      "sunrise": 1665577098,
-      "sunset": 1665618396,
-      "moonrise": 1665624840,
-      "moonset": 1665587040,
-      "moon_phase": 0.6,
-      "temp": {
-        "day": 83.25,
-        "min": 59.79,
-        "max": 83.25,
-        "night": 67.55,
-        "eve": 75.02,
-        "morn": 59.79
-      },
-      "feels_like": {
-        "day": 85.19,
-        "night": 68.38,
-        "eve": 75.85,
-        "morn": 58.8
-      },
-      "pressure": 1014,
-      "humidity": 55,
-      "dew_point": 65.52,
-      "wind_speed": 12.57,
-      "wind_deg": 354,
-      "wind_gust": 25.59,
-      "weather": [
-        {
-          "id": 501,
-          "main": "Rain",
-          "description": "moderate rain",
-          "icon": "10d"
-        }
-      ],
-      "clouds": 18,
-      "pop": 1,
-      "rain": 4.04,
-      "uvi": 6
-    },
-    {
-      "dt": 1665684000,
-      "sunrise": 1665663544,
-      "sunset": 1665704721,
-      "moonrise": 1665713520,
-      "moonset": 1665677160,
-      "moon_phase": 0.63,
-      "temp": {
-        "day": 79.23,
-        "min": 61.16,
-        "max": 80.44,
-        "night": 61.16,
-        "eve": 66.83,
-        "morn": 62.71
-      },
-      "feels_like": {
-        "day": 79.23,
-        "night": 58.86,
-        "eve": 64.9,
-        "morn": 63.19
-      },
-      "pressure": 1014,
-      "humidity": 25,
-      "dew_point": 40.53,
-      "wind_speed": 12.88,
-      "wind_deg": 2,
-      "wind_gust": 26.71,
-      "weather": [
-        {
-          "id": 503,
-          "main": "Rain",
-          "description": "very heavy rain",
-          "icon": "10d"
-        }
-      ],
-      "clouds": 1,
-      "pop": 1,
-      "rain": 27.65,
-      "uvi": 6
-    },
-    {
-      "dt": 1665770400,
-      "sunrise": 1665749990,
-      "sunset": 1665791047,
-      "moonrise": 1665802500,
-      "moonset": 1665767160,
-      "moon_phase": 0.66,
-      "temp": {
-        "day": 78.62,
-        "min": 54.45,
-        "max": 80.89,
-        "night": 63.99,
-        "eve": 68.59,
-        "morn": 54.45
-      },
-      "feels_like": {
-        "day": 77.13,
-        "night": 61.92,
-        "eve": 66.7,
-        "morn": 51.33
-      },
-      "pressure": 1016,
-      "humidity": 20,
-      "dew_point": 34.36,
-      "wind_speed": 6.38,
-      "wind_deg": 191,
-      "wind_gust": 10.94,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "clouds": 0,
-      "pop": 0,
-      "uvi": 6
-    },
-    {
-      "dt": 1665856800,
-      "sunrise": 1665836436,
-      "sunset": 1665877373,
-      "moonrise": 1665891780,
-      "moonset": 1665856920,
-      "moon_phase": 0.69,
-      "temp": {
-        "day": 82.9,
-        "min": 56.66,
-        "max": 86.88,
-        "night": 68.31,
-        "eve": 72.75,
-        "morn": 56.66
-      },
-      "feels_like": {
-        "day": 80.64,
-        "night": 66.49,
-        "eve": 71.37,
-        "morn": 54.37
-      },
-      "pressure": 1016,
-      "humidity": 23,
-      "dew_point": 42.22,
-      "wind_speed": 11.23,
-      "wind_deg": 237,
-      "wind_gust": 19.73,
-      "weather": [
-        {
-          "id": 800,
-          "main": "Clear",
-          "description": "clear sky",
-          "icon": "01d"
-        }
-      ],
-      "clouds": 0,
-      "pop": 0,
-      "uvi": 6
-    }
-  ]
+  "Headline": {
+    "Category": "mild",
+    "EffectiveDate": "2022-10-15T08:00:00-07:00",
+    "EffectiveEpochDate": 1665846000,
+    "EndDate": null,
+    "EndEpochDate": null,
+    "Link": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?lang=en-us",
+    "MobileLink": "http://www.accuweather.com/en/us/cupertino-ca/95014/daily-weather-forecast/39714_pc?lang=en-us",
+    "Severity": 4,
+    "Text": "Pleasant this weekend"
+  }
 }

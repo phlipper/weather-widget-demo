@@ -16,7 +16,7 @@ services:
         key: SECRET_KEY_BASE
       - key: GOOGLE_API_KEY
         sync: false
-      - key: OPEN_WEATHER_API_KEY
+      - key: ACCU_WEATHER_API_KEY
         sync: false
     name: weather-api-demo
     plan: free

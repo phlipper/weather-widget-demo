@@ -16,7 +16,7 @@ x-shared-config:
     - .env.local
 
   rails_image_name: &rails_image_name
-    image: mutations/rails:ruby3.1.2-alpine3.15-2022-05-05
+    image: mutations/rails:ruby3.1.2-alpine3.16-2022-10-11
 
   api: &api
     <<: *base

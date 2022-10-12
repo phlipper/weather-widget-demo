@@ -12,31 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :city, style: "display: block" %>
-    <%= form.text_field :city %>
+    <%= form.label :postal_code %>
+    <%= form.number_field :postal_code,
+      max: 99999,
+      maxlength: 5,
+      pattern: "[0-9]{5}",
+      placeholder: "Enter a postal code",
+      required: true
+    %>
+    <%= form.submit "Lookup" %>
   </div>
 
   <div>
-    <%= form.label :state, style: "display: block" %>
-    <%= form.text_field :state %>
-  </div>
-
-  <div>
-    <%= form.label :postal_code, style: "display: block" %>
-    <%= form.text_field :postal_code %>
-  </div>
-
-  <div>
-    <%= form.label :lat, style: "display: block" %>
-    <%= form.text_field :lat %>
-  </div>
-
-  <div>
-    <%= form.label :lng, style: "display: block" %>
-    <%= form.text_field :lng %>
-  </div>
-
-  <div>
-    <%= form.submit %>
   </div>
 <% end %>
