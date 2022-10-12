@@ -50,6 +50,12 @@ class LocationTest < ActiveSupport::TestCase
     assert_not_nil @location.errors[:lng]
   end
 
+  test "invalid without accu_weather_key" do
+    @location.accu_weather_key = nil
+    refute @location.valid?
+    assert_not_nil @location.errors[:accu_weather_key]
+  end
+
   test "to_param" do
     assert_equal @location.postal_code, @location.to_param
   end

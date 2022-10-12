@@ -1,9 +1,7 @@
-<h1>Weather for <%= @location.postal_code %></h1>
+<header style="text-align: center">
+  <h1>Weather for <%= @location.postal_code %></h1>
 
-<p style="color: green"><%= notice %></p>
+  <%= render "location_address", location: @location %>
+</header>
 
 <%= render @location %>
-
-<div>
-  <%= link_to "Back to locations", root_path %>
-</div>

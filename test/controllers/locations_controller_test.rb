@@ -25,6 +25,7 @@ class LocationsControllerTest < ActionDispatch::IntegrationTest
     assert_difference("Location.count") do
       post locations_url, params: {
         location: {
+          accu_weather_key: @location.accu_weather_key,
           city: @location.city,
           lat: @location.lat,
           lng: @location.lng,
